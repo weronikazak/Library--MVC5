@@ -189,9 +189,11 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomerController.cs" />
+    <Compile Include="Controllers\Api\MovieController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Dtos\CustomerDtos.cs" />
+    <Compile Include="Dtos\MovieDtos.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -206,6 +208,14 @@
     <Compile Include="Migrations\201905300921195_AddedRequiredToBothClasses.cs" />
     <Compile Include="Migrations\201905300921195_AddedRequiredToBothClasses.Designer.cs">
       <DependentUpon>201905300921195_AddedRequiredToBothClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905312203457_RemovingMigrationMovieTable.cs" />
+    <Compile Include="Migrations\201905312203457_RemovingMigrationMovieTable.Designer.cs">
+      <DependentUpon>201905312203457_RemovingMigrationMovieTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905312205359_AddingMovieTable.cs" />
+    <Compile Include="Migrations\201905312205359_AddingMovieTable.Designer.cs">
+      <DependentUpon>201905312205359_AddingMovieTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -309,6 +319,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905300921195_AddedRequiredToBothClasses.resx">
       <DependentUpon>201905300921195_AddedRequiredToBothClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905312203457_RemovingMigrationMovieTable.resx">
+      <DependentUpon>201905312203457_RemovingMigrationMovieTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905312205359_AddingMovieTable.resx">
+      <DependentUpon>201905312205359_AddingMovieTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -9,41 +9,8 @@ namespace Vidly.ViewModel
 {
     public class NewMovie
     {
-        public int? Id { get; set; }
         public IEnumerable<Genre> Genre { get; set; }
 
-        [Required]
-        public string Name { get; set; }
-
-        [Required]
-        public byte? GenreId { get; set; }
-
-        [Required]
-        public DateTime? ReleaseDate { get; set; }
-
-        [Range(1,20), Required]
-        public byte? NumberInStock { get; set; }
-
-        public string Title
-        {
-            get
-            {
-                return Id != 0 ? "Edit Movie":"New Movie";
-            }
-        }
-
-        public NewMovie()
-        {
-            Id = 0;
-        }
-
-        public NewMovie(Movie movie)
-        {
-            Id = movie.Id;
-            Name = movie.Name;
-            ReleaseDate = movie.ReleaseDate;
-            NumberInStock = movie.NumberInStock;
-            GenreId = movie.GenreId;
-        }
+        public Movie Movie { get; set; }
     }
 }

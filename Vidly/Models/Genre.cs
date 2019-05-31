@@ -9,7 +9,7 @@ namespace Vidly.Models
     public class Genre
     {
         [Key]
-        public int ID { get; set; }
+        public byte ID { get; set; }
         public string Name { get; set; }
     }
 }

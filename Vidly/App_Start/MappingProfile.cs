@@ -10,10 +10,21 @@ using AutoMapper;
 namespace Vidly.App_Start
 {
     public class MappingProfile : Profile
+
     {
+        public static void Run()
+
+        {
+            AutoMapper.Mapper.Initialize(a =>
+            {
+                a.AddProfile<MappingProfile>();
+            });
+
+        }
+
         public MappingProfile()
         {
-            Mapper.
+            CreateMap<Customer, CustomerDtos>().ReverseMap();
         }
     }
 }
