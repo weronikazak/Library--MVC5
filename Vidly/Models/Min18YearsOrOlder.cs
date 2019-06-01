@@ -24,7 +24,7 @@ namespace Vidly.Models
 
             var age = DateTime.Now.Year - Customer.BirthDate.Value.Year;
 
-            return (age >= 18 ? new ValidationResult("Customer underage") : ValidationResult.Success);
+            return (age >= 18 ? ValidationResult.Success : new ValidationResult("Customer underage"));
 
 
         }
