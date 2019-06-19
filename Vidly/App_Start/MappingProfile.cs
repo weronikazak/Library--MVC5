@@ -25,6 +25,9 @@ namespace Vidly.App_Start
         public MappingProfile()
         {
             CreateMap<Customer, CustomerDtos>().ReverseMap();
+            CreateMap<Movie, MovieDtos>().ReverseMap();
+            CreateMap<MembershipType, MembershipTypeDto>().ReverseMap();
+            CreateMap<Genre, GenreDto>().ReverseMap();
         }
     }
 }

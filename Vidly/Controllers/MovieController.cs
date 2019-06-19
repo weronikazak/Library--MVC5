@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using Vidly.Models;
 using System.Data.Entity;
 using Vidly.ViewModel;
-
+using Vidly.Views.Movie;
 
 namespace Vidly.Controllers
 {
@@ -25,13 +25,23 @@ namespace Vidly.Controllers
         }
 
         // GET: Customers
-        public ActionResult Index()
-        {
-            var movies = _context.Movies.Include(a => a.Genre).ToList();
+        //public ActionResult Index()
+        //{
+        //    var movies = _context.Movies.Include(a => a.Genre).ToList();
 
-            return View(movies);
+        //    return View(movies);
+        //}
+
+        public ViewResult Index()
+        {
+            if (User.IsInRole(RoleName.CanManageMovies))
+            {
+                return View("List");
+            }
+                return View("ReadOnlyList");
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult New()
         {
             var genres = _context.Genres.ToList();
@@ -90,6 +100,7 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult Edit(int id)
         {
             var movie = _context.Movies.SingleOrDefault(c => c.Id == id);
@@ -106,6 +117,7 @@ namespace Vidly.Controllers
             return View("MovieForm", viewModel);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         [HttpPost]
         public ActionResult Create(Movie movie)
         {

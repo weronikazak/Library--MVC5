@@ -241,3 +241,13 @@ C:\Users\Weronika\Documents\Vidl\Vidly\bin\Microsoft.CodeDom.Providers.DotNetCom
 C:\Users\Weronika\Documents\Vidl\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 C:\Users\Weronika\Documents\Vidl\Vidly\obj\Debug\Vidly.Migrations.RemovingMigrationMovieTable.resources
 C:\Users\Weronika\Documents\Vidl\Vidly\obj\Debug\Vidly.Migrations.AddingMovieTable.resources
+C:\Users\Weronika\Documents\Vidl\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToUser.resources
+C:\Users\Weronika\Documents\Vidl\Vidly\obj\Debug\Vidly.Migrations.AddPhoneNumberToDatabase.resources
+C:\Users\Weronika\Documents\Vidl\Vidly\bin\Glimpse.Ado.dll
+C:\Users\Weronika\Documents\Vidl\Vidly\bin\Glimpse.AspNet.dll
+C:\Users\Weronika\Documents\Vidl\Vidly\bin\Glimpse.Core.dll
+C:\Users\Weronika\Documents\Vidl\Vidly\bin\Glimpse.EF6.dll
+C:\Users\Weronika\Documents\Vidl\Vidly\bin\Glimpse.Mvc5.dll
+C:\Users\Weronika\Documents\Vidl\Vidly\obj\Debug\Vidly.Migrations.AddRentalToDatabase.resources
+C:\Users\Weronika\Documents\Vidl\Vidly\obj\Debug\Vidly.Migrations.AddDateRented.resources
+C:\Users\Weronika\Documents\Vidl\Vidly\bin\Elmah.dll
